@@ -7,7 +7,8 @@ def reformat_languages(languages)
         type: type[:type]
       }
       new_hash[language][:style] = []
-      new_hash[language][:style] << paradigm
+      new_hash[language][:style].push(paradigm)
+      binding.pry
     end
   end
   new_hash
